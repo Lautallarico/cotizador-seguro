@@ -9,6 +9,9 @@ console.log('Desafio obligatorio');
 
 */
 
+const tipoVehiculo = ['Chico', 'Mediano', 'Camioneta']
+const tipoSeguro = ['Básica', 'Todo riesgo']
+
 let opcionVehiculo = prompt(`Seleccion el tipo de automóvil a asegurar
                             1. Chico
                             2. Mediano
@@ -37,7 +40,7 @@ function cotizadorSeguro(opcionVehiculo, valorAuto, opcionCobertura) {
         default:
             break;
     };
-    
+
     let cuotaSeguro = 0;
     if (opcionCobertura == '1') {
         cuotaSeguro = cantidad * 1.3
@@ -46,7 +49,7 @@ function cotizadorSeguro(opcionVehiculo, valorAuto, opcionCobertura) {
         cuotaSeguro = cantidad * 1.5
     };
 
-    alert('El valor de su cobertura mensual es de aproximadamente $' + cuotaSeguro.toFixed(2))
+    alert('Tu elección de vehiculo: ' + tipoVehiculo[opcionVehiculo - 1] + '\n' + 'Tu elección de cobertura: ' + tipoSeguro[opcionCobertura - 1] + '\n' + 'El valor de su cobertura mensual es de aproximadamente $' + cuotaSeguro.toFixed(2))
 }
 
 cotizadorSeguro(opcionVehiculo, valorAuto, opcionCobertura)
