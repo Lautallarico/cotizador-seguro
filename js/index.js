@@ -13,41 +13,7 @@ const tipoVehiculo = ['Chico', 'Mediano', 'Camioneta']
 const tipoSeguro = ['Básica', 'Todo riesgo']
 
 
-const seleccionAuto = document.forms['seleccionVehiculo'].elements['seleccion'].value
-
-const cobertura = document.forms.tipoCobertura.cobertura.value
-
-const valorAuto = document.getElementById('valorAuto').value
-
 const $resultado = document.querySelector('#resultado')
-// function cotizadorSeguro(seleccionAuto, valorAuto, cobertura) {
-
-//     let cantidad = 0
-//     switch (seleccionAuto) {
-//         case 'chico':
-//             cantidad = valorAuto * 0.002
-//             break;
-//         case 'mediano':
-//             cantidad = valorAuto * 0.005
-//             break;
-//         case 'grande':
-//             cantidad = valorAuto * 0.009
-//             break;
-
-//         default:
-//             break;
-//     };
-
-//     let cuotaSeguro = 0;
-//     if (cobertura == 'basico') {
-//         cuotaSeguro = cantidad * 1.3
-
-//     } else if (cobertura == 'todo riesgo') {
-//         cuotaSeguro = cantidad * 1.5
-//     };
-
-//     alert('Tu elección de vehiculo: ' + tipoVehiculo[seleccionAuto - 1] + '\n' + 'Tu elección de cobertura: ' + tipoSeguro[cobertura - 1] + '\n' + 'El valor de su cobertura mensual es de aproximadamente $' + cuotaSeguro.toFixed(2))
-// }
 
 
 
