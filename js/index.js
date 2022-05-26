@@ -29,10 +29,10 @@ $resultado.onclick = function () {
             cantidad = valorAuto * 0.002
             break;
         case 'mediano':
-            cantidad = valorAuto * 0.005
+            cantidad = valorAuto * 0.003
             break;
         case 'grande':
-            cantidad = valorAuto * 0.009
+            cantidad = valorAuto * 0.004
             break;
 
         default:
@@ -41,10 +41,10 @@ $resultado.onclick = function () {
 
     let cuotaSeguro = 0;
     if (cobertura == 'basico') {
-        cuotaSeguro = cantidad * 1.3
+        cuotaSeguro = cantidad * 1.2
 
     } else if (cobertura == 'todo riesgo') {
-        cuotaSeguro = cantidad * 1.5
+        cuotaSeguro = cantidad * 1.3
     };
 
     //IMPRIMO RESULTADO EN PANTALLA
